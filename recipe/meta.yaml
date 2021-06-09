@@ -1,5 +1,5 @@
 {% set name = 'xtcav2' %}
-{% set version = '0.3' %}
+{% set version = '0.4' %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/slaclab/{{ name }}/archive/v{{ version}}.tar.gz
-  sha256: e605dc33804a4792f74f19ebc921df68d9acadeb239a852177b098b151373acd
+  sha256: de1208d5ba45fa8a58a5a4f717bd841c50ca68520257ee29a536409aebad227f 
 
 build:
   skip: True  # [win or osx]
-  number: 13
+  number: 0
   script:
     - "{{ PYTHON }} -m pip install . -vv"
 
