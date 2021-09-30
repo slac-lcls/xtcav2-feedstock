@@ -26,7 +26,6 @@ requirements:
     - scipy
     - h5py
     - scikit-learn
-    - mpi4py
     - psana
 
 test:
